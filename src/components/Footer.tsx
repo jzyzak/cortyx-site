@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa";  // <-- import LinkedIn icon
 
 export default function Footer() {
   return (
@@ -11,11 +12,20 @@ export default function Footer() {
         </div>
 
         {/* Right - Navigation Links */}
-        <div className="flex flex-wrap gap-6 justify-center text-sm">
+        <div className="flex flex-wrap gap-6 justify-center text-sm items-center">
           <Link to="/product" className="hover:text-primary transition">Product</Link>
           <Link to="/team" className="hover:text-primary transition">Team</Link>
           <Link to="/contact" className="hover:text-primary transition">Contact</Link>
           <Link to="/waitlist" className="hover:text-primary transition">Waitlist</Link>
+          {/* LinkedIn Icon */}
+          <a
+            href="https://www.linkedin.com/in/joshua-zyzak-6b14b4246/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-primary transition text-xl"
+          >
+            <FaLinkedin />
+          </a>
         </div>
       </div>
 

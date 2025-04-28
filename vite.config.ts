@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-
-// detect if we are building for production
-const isProd = process.env.NODE_ENV === 'production';
+import tailwindcss from '@tailwindcss/vite';  // IMPORTANT
 
 export default defineConfig({
-  base: isProd ? '/cortyx-site/' : '/',
-  plugins: [react()],
+  base: '/cortyx-site/',  // for GitHub Pages (correct)
+  plugins: [react(), tailwindcss()],
 });
