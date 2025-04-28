@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';  // IMPORTANT
 
 export default defineConfig({
-  base: '/cortyx-site/',
+  base: '/',
   plugins: [react(), tailwindcss()],
 });
