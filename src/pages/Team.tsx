@@ -53,12 +53,12 @@ export default function Team() {
       >
         <h2 className="text-2xl font-bold mb-2">Hi! I'm Josh Zyzak!</h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          I'm am the developer/founder of Cortyx. I'm going to cut straight to it: traditional education has its flaws that I've seen firsthand as a student.
+          I am the developer/founder of Cortyx. I'm going to cut straight to it: traditional education has its flaws that I've seen firsthand as a student.
           I can't begin to count how many people I've seen asleep or skip class and how much better people tend to learn either on their own or with others. With Cortyx,
           you can skip the awkward, cold connecting with fellow students and learn at a pace that works for you. I know that sounds like a lot of buzzwords, but I promise
           that Cortyx is different. It's not just another boring study tool — it's a social learning network that helps you avoid those awkward first interactions and jump
           straight to the good part. If you’re interested in joining the team — whether in design, frontend, backend, or product — or just want to chat,
-          feel free to reach out at <a href="mailto:cortyxlabs@gmail.com" className="text-primary underline">jzyzak@college.harvard.edu</a>
+          feel free to reach out at <a href="mailto:cortyxlabs@gmail.com" className="text-primary underline">cortyxlabs@gmail.com</a>
         </p>
       </motion.div>
     </main>
