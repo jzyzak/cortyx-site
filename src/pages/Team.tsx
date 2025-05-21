@@ -58,7 +58,7 @@ export default function Team() {
           you can skip the awkward, cold connecting with fellow students and learn at a pace that works for you. I know that sounds like a lot of buzzwords, but I promise
           that Cortyx is different. It's not just another boring study tool — it's a social learning network that helps you avoid those awkward first interactions and jump
           straight to the good part. If you’re interested in joining the team — whether in design, frontend, backend, or product — or just want to chat,
-          feel free to reach out at <a href="mailto:cortyxlabs@gmail.com" className="text-primary underline">cortyxlabs@gmail.com</a>
+          feel free to reach out at <a href="mailto:cortyxlabs@gmail.com" className="text-primary underline">cortyxlabs@gmail.com</a> 
         </p>
       </motion.div>
     </main>
