@@ -1,4 +1,5 @@
-import logo from "../assets/FullLogo.jpg";
+// Logo is in public folder for reliable GitHub Pages deployment
+const logo = "/FullLogo.jpg";
 import harvardLogo from "../assets/harvard_university_logo.png";
 import mitLogo from "../assets/mit_logo.png";
 import { motion, AnimatePresence } from "framer-motion";

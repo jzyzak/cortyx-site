@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import logo from "../assets/FullLogo.jpg";
+// Logo is in public folder for reliable GitHub Pages deployment
+const logo = "/FullLogo.jpg";
 
 const navLinks = [
   { name: "About", anchor: "#about" },
