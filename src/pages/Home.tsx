@@ -46,6 +46,42 @@ export default function Home() {
 
   return (
     <main className="min-h-screen text-white px-4 sm:px-8 md:px-20 pt-32 relative bg-gradient-to-b from-[#0a0d14] via-[#1a1d29] to-[#0a0d14]">
+      {/* Application Deadline Banner */}
+      <motion.section
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="mb-12 relative z-10"
+      >
+        <div className="max-w-3xl mx-auto">
+          <div className="relative">
+            <div className="absolute inset-0 blur-3xl bg-primary/40 opacity-60 rounded-[20px]" />
+            <div className="relative bg-gradient-to-r from-primary/30 via-primary/20 to-primary/30 backdrop-blur-2xl rounded-[20px] border-2 border-primary/50 p-4 sm:p-6 shadow-2xl">
+              <motion.div
+                initial={{ scale: 0.95 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="text-center"
+              >
+                <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-3 tracking-tight drop-shadow-lg">
+                  Applications for W26 Bootcamp Due January 1st!
+                </h2>
+                <p className="text-lg sm:text-xl text-white/90 font-semibold">
+                  <a 
+                    href="https://forms.gle/WXAanYWVfoqzyRMQ9" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline font-bold"
+                  >
+                    Apply
+                  </a> by January 1st, 2026 at 11:59PM EST
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
       {/* Animated gradient mesh background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-50" />
