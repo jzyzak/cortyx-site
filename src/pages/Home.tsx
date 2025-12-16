@@ -275,7 +275,7 @@ export default function Home() {
             { section: "Registration", items: [
               {
                 question: "When are applications open and when do they close?",
-                answer: "Applications are currently open for our Winter 2026 cohort! The applications will close on December 15th, 2025, and we will aim to notify applicants of their decisions by December 18th. Please keep updated with our website or contact us for more information or updates."
+                answer: "Applications are currently open for our Winter 2026 cohort! The applications will close on January 1st, 2026 at 11:59PM EST, and we will aim to notify applicants of their decisions by January 2nd. Please keep updated with our website or contact us for more information or updates."
               },
               {
                 question: "How much does the bootcamp cost?",
