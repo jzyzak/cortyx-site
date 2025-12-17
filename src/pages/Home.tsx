@@ -61,9 +61,9 @@ export default function Home() {
                 initial={{ scale: 0.95 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-center"
+                className="text-center space-y-2 sm:space-y-3"
               >
-                <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-3 tracking-tight drop-shadow-lg">
+                <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight drop-shadow-lg">
                   Applications for W26 Bootcamp Due January 1st!
                 </h2>
                 <p className="text-lg sm:text-xl text-white/90 font-semibold">
@@ -75,6 +75,9 @@ export default function Home() {
                   >
                     Apply
                   </a> by January 1st, 2026 at 11:59PM EST
+                </p>
+                <p className="text-base sm:text-lg text-white/80">
+                  Admissions are rolling — limited spots left.
                 </p>
               </motion.div>
             </div>
