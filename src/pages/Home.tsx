@@ -64,7 +64,7 @@ export default function Home() {
                 className="text-center space-y-2 sm:space-y-3"
               >
                 <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight drop-shadow-lg">
-                  Applications for W26 Bootcamp Due January 3rd!
+                  Applications for S26 Bootcamp Session 1 Due April 5th!
                 </h2>
                 <p className="text-lg sm:text-xl text-white/90 font-semibold">
                   <a 
@@ -74,7 +74,7 @@ export default function Home() {
                     className="text-primary hover:underline font-bold"
                   >
                     Apply
-                  </a> by January 3rd, 2026 at 11:59PM EST
+                  </a> by April 5th, 2026 at 11:59PM EST
                 </p>
                 <p className="text-base sm:text-lg text-white/80">
                   Admissions are rolling — limited spots left!
@@ -300,7 +300,7 @@ export default function Home() {
               },
               {
                 question: "When does the program take place?",
-                answer: "Our Winter 2026 cohort has two groups. The first group will meet during the week of January 5th-9th from 7-9:30PM EST, and the second group will meet during the week of January 12th-16th from 6:30-9PM EST. If you would still like to participate in the bootcamp but are unable to find a time that works for you, please contact us to arrange accomodations."
+                answer: "Our Spring 2026 cohort has two groups. The first group will meet during the week of April 6th-10th from 7-9:30PM EST, and the second group will meet during the week of April 13th-17th from 6:30-9PM EST. If you would still like to participate in the bootcamp but are unable to find a time that works for you, please contact us to arrange accomodations."
               },
               {
                 question: "Who is eligible to apply?",
@@ -314,7 +314,7 @@ export default function Home() {
             { section: "Registration", items: [
               {
                 question: "When are applications open and when do they close?",
-                answer: "Applications are currently open for our Winter 2026 cohort! The applications will close on January 1st, 2026 at 11:59PM EST, and we will aim to notify applicants of their decisions by January 2nd. Please keep updated with our website or contact us for more information or updates."
+                answer: "Applications are currently open for our Spring 2026 cohort! The applications will close on April 5th, 2026 at 11:59PM EST, and we will aim to notify applicants of their decisions by April 6th. Please keep updated with our website or contact us for more information or updates."
               },
               {
                 question: "How much does the bootcamp cost?",
