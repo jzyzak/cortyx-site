@@ -300,7 +300,7 @@ export default function Home() {
               },
               {
                 question: "When does the program take place?",
-                answer: "Our Summer 2026 cohort has two groups. The first group will meet during the week of June 22nd - 26th from 6:30-9PM EST, and the second group will meet during the week of July 6th - July 10th from 6:30-9PM EST. If you would still like to participate in the bootcamp but are unable to find a time that works for you, please contact us to arrange accomodations."
+                answer: "Our Summer 2026 cohort has two groups. The first group will meet during the week of June 22nd - 26th from 6:30-9PM EST, and the second group will meet during the week of July 13th - July 17th from 6:30-9PM EST. If you would still like to participate in the bootcamp but are unable to find a time that works for you, please contact us to arrange accomodations."
               },
               {
                 question: "Who is eligible to apply?",
