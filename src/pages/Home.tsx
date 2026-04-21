@@ -330,15 +330,11 @@ export default function Home() {
               },
               {
                 question: "Are refunds available?",
-                answer: "If a refund is requested within 3-5 days of the payment, a full refund is allowed. If a refund is requested after 5 days of the payment, we do offer a partial refund of 50% of the payment. Please contact us directly to discuss our specific refund policy and any extenuating circumstances."
+                answer: "If a refund is requested within 48 hours of the payment, a full refund is allowed. If a refund is requested after 5 days of the payment, we do offer a partial refund of 50% of the payment. Please contact us directly to discuss our specific refund policy and any extenuating circumstances."
               },
               {
                 question: "How do referrals work?",
                 answer: "If you have a friend who is also interested in the program, please refer them to our website, have them fill out the application form, and add your name under the referral field. If they are accepted into the program, you will receive a $100 credit towards your own bootcamp payment."
-              },
-              {
-                question: "Do you offer financial aid or scholarships?",
-                answer: "Yes! We are committed to making our program accessible to all qualified students regardless of financial circumstances. We offer need-based financial aid and merit-based scholarships. To apply for financial assistance, please indicate your interest in your application or contact us directly. We review all requests on a case-by-case basis."
               }
             ]},
             { section: "Other", items: [
