@@ -56,17 +56,17 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <div className="relative">
             <div className="absolute inset-0 blur-3xl bg-primary/40 opacity-60 rounded-[20px]" />
-            <div className="relative bg-gradient-to-r from-primary/30 via-primary/20 to-primary/30 backdrop-blur-2xl rounded-[20px] border-2 border-primary/50 p-4 sm:p-6 shadow-2xl">
+            <div className="relative bg-gradient-to-r from-primary/30 via-primary/20 to-primary/30 backdrop-blur-2xl rounded-[20px] border-2 border-primary/50 px-5 py-6 sm:px-8 sm:py-8 shadow-2xl">
               <motion.div
                 initial={{ scale: 0.95 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-center space-y-2 sm:space-y-3"
+                className="text-center space-y-3 sm:space-y-4"
               >
-                <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight drop-shadow-lg">
-                  Applications for S26 Bootcamp Session 1 Due April 5th!
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight drop-shadow-lg">
+                  Applications for S26 Bootcamp Session 1 Due June 1st!
                 </h2>
-                <p className="text-lg sm:text-xl text-white/90 font-semibold">
+                <p className="text-xl sm:text-2xl text-white/90 font-semibold leading-relaxed">
                   <a 
                     href="https://forms.gle/WXAanYWVfoqzyRMQ9" 
                     target="_blank" 
@@ -74,9 +74,9 @@ export default function Home() {
                     className="text-primary hover:underline font-bold"
                   >
                     Apply
-                  </a> by April 5th, 2026 at 11:59PM EST
+                  </a> by June 1st, 2026 at 11:59PM EST
                 </p>
-                <p className="text-base sm:text-lg text-white/80">
+                <p className="text-lg sm:text-xl text-white/80 leading-relaxed">
                   Admissions are rolling — limited spots left!
                 </p>
               </motion.div>
@@ -300,7 +300,7 @@ export default function Home() {
               },
               {
                 question: "When does the program take place?",
-                answer: "Our Spring 2026 cohort has two groups. The first group will meet during the week of April 6th-10th from 7-9:30PM EST, and the second group will meet during the week of April 13th-17th from 6:30-9PM EST. If you would still like to participate in the bootcamp but are unable to find a time that works for you, please contact us to arrange accomodations."
+                answer: "Our Summer 2026 cohort has two groups. The first group will meet during the week of June 22nd - 26th from 7-9:30PM EST, and the second group will meet during the week of June 29th - July 3rd from 6:30-9PM EST. If you would still like to participate in the bootcamp but are unable to find a time that works for you, please contact us to arrange accomodations."
               },
               {
                 question: "Who is eligible to apply?",
@@ -314,7 +314,7 @@ export default function Home() {
             { section: "Registration", items: [
               {
                 question: "When are applications open and when do they close?",
-                answer: "Applications are currently open for our Spring 2026 cohort! The applications will close on April 5th, 2026 at 11:59PM EST, and we will aim to notify applicants of their decisions by April 6th. Please keep updated with our website or contact us for more information or updates."
+                answer: "Applications are currently open for our Summer 2026 cohort! The applications will close on June 1st, 2026 at 11:59PM EST, and we will aim to notify applicants of their decisions by June 5th. Please keep updated with our website or contact us for more information or updates."
               },
               {
                 question: "How much does the bootcamp cost?",
