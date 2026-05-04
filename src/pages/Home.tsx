@@ -3,18 +3,52 @@ const logo = "/FullLogo.jpg";
 import harvardLogo from "../assets/harvard_university_logo.png";
 import mitLogo from "../assets/mit_logo.png";
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState, type FormEvent } from "react";
 
 const partnerUniversities = [
   { name: "Harvard University", logo: harvardLogo },
   { name: "MIT", logo: mitLogo },
 ];
 
+/** Recipients for the contact form “Send Message” mailto (both receive the message). */
+const CONTACT_RECIPIENTS = [
+  "cortyxlabs@gmail.com",
+  "jzyzak@college.harvard.edu",
+] as const;
+
+const CONTACT_MAILTO = CONTACT_RECIPIENTS.join(",");
+
 export default function Home() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [currentUniversity, setCurrentUniversity] = useState(0);
   const [animateSection, setAnimateSection] = useState<string | null>(null);
+  const [contactName, setContactName] = useState("");
+  const [contactEmail, setContactEmail] = useState("");
+  const [contactMessage, setContactMessage] = useState("");
+  const [contactSubmitStatus, setContactSubmitStatus] = useState<"idle" | "opened">("idle");
+
+  const handleContactSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(
+      contactName.trim()
+        ? `Cortyx Labs inquiry from ${contactName.trim()}`
+        : "Cortyx Labs contact form"
+    );
+    const body = encodeURIComponent(
+      [
+        contactName.trim() && `Name: ${contactName.trim()}`,
+        contactEmail.trim() && `Email: ${contactEmail.trim()}`,
+        "",
+        contactMessage.trim() || "(No message body)",
+      ]
+        .filter(Boolean)
+        .join("\n")
+    );
+    window.location.href = `mailto:${CONTACT_MAILTO}?subject=${subject}&body=${body}`;
+    setContactSubmitStatus("opened");
+    setTimeout(() => setContactSubmitStatus("idle"), 5000);
+  };
 
   useEffect(() => {
     const moveBlob = (e: MouseEvent) => {
@@ -344,9 +378,14 @@ export default function Home() {
                   <>
                     We're here to help! You can reach out to us in several ways. Click the "Contact" section below to fill out our contact form, 
                     or email us directly at{" "}
-                    <a href="mailto:cortyxlabs@gmail.com" className="text-primary hover:underline">
-                      cortyxlabs@gmail.com
-                    </a>
+                    {CONTACT_RECIPIENTS.map((email, i) => (
+                      <Fragment key={email}>
+                        {i > 0 ? " or " : null}
+                        <a href={`mailto:${email}`} className="text-primary hover:underline">
+                          {email}
+                        </a>
+                      </Fragment>
+                    ))}
                     . We typically respond within 24-48 hours and are happy to answer any questions you may have about the program, 
                     application process, or anything else related to Cortyx Labs.
                   </>
@@ -357,9 +396,14 @@ export default function Home() {
                 answer: (
                   <>
                     For inquiries about our college consulting or project advisory services, please reach out to us directly at{" "}
-                    <a href="mailto:cortyxlabs@gmail.com" className="text-primary hover:underline">
-                      cortyxlabs@gmail.com
-                    </a>
+                    {CONTACT_RECIPIENTS.map((email, i) => (
+                      <Fragment key={email}>
+                        {i > 0 ? " or " : null}
+                        <a href={`mailto:${email}`} className="text-primary hover:underline">
+                          {email}
+                        </a>
+                      </Fragment>
+                    ))}
                     . We'll be happy to discuss how we can help you with your college applications or startup project.
                   </>
                 )
@@ -471,34 +515,63 @@ export default function Home() {
             <p className="text-lg text-gray-200 mb-6 text-center leading-relaxed tracking-wide">
               Have questions? Want to learn more? Get in touch with us!
             </p>
-            <form className="flex flex-col space-y-4">
+            <form className="flex flex-col space-y-4" onSubmit={handleContactSubmit}>
               <input
                 type="text"
+                name="name"
+                autoComplete="name"
+                value={contactName}
+                onChange={(e) => setContactName(e.target.value)}
                 placeholder="Your name"
                 className="p-3 rounded-lg bg-white/10 backdrop-blur-md text-white placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <input
                 type="email"
+                name="email"
+                autoComplete="email"
+                required
+                value={contactEmail}
+                onChange={(e) => setContactEmail(e.target.value)}
                 placeholder="Your email"
                 className="p-3 rounded-lg bg-white/10 backdrop-blur-md text-white placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <textarea
+                name="message"
+                required
+                value={contactMessage}
+                onChange={(e) => setContactMessage(e.target.value)}
                 placeholder="Your message"
                 className="p-3 rounded-lg bg-white/10 backdrop-blur-md text-white placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-primary"
                 rows={5}
-              ></textarea>
+              />
               <button
                 type="submit"
                 className="bg-primary text-black font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300 shadow-lg shadow-primary/50"
               >
                 Send Message
               </button>
+              {contactSubmitStatus === "opened" && (
+                <p className="text-primary text-sm text-center" role="status">
+                  If your mail app did not open, email us at{" "}
+                  {CONTACT_RECIPIENTS.map((email, i) => (
+                    <Fragment key={email}>
+                      {i > 0 ? " or " : null}
+                      <span className="break-all">{email}</span>
+                    </Fragment>
+                  ))}
+                </p>
+              )}
             </form>
             <p className="text-gray-300 text-sm mt-4 text-center">
               Or email us directly at{" "}
-              <a href="mailto:cortyxlabs@gmail.com" className="text-primary hover:underline">
-                cortyxlabs@gmail.com
-              </a>
+              {CONTACT_RECIPIENTS.map((email, i) => (
+                <Fragment key={email}>
+                  {i > 0 ? " or " : null}
+                  <a href={`mailto:${email}`} className="text-primary hover:underline break-all">
+                    {email}
+                  </a>
+                </Fragment>
+              ))}
             </p>
           </motion.div>
         </div>
