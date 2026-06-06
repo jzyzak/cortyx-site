@@ -98,7 +98,7 @@ export default function Home() {
                 className="text-center space-y-3 sm:space-y-4"
               >
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight drop-shadow-lg">
-                  Applications for S26 Bootcamp Session 1 Due June 1st!
+                  Applications for S26 Bootcamp Session 2 Due July 1st!
                 </h2>
                 <p className="text-xl sm:text-2xl text-white/90 font-semibold leading-relaxed">
                   <a 
@@ -108,7 +108,7 @@ export default function Home() {
                     className="text-primary hover:underline font-bold"
                   >
                     Apply
-                  </a> by June 1st, 2026 at 11:59PM EST
+                  </a> by July 1st, 2026 at 11:59PM EST
                 </p>
                 <p className="text-lg sm:text-xl text-white/80 leading-relaxed">
                   Admissions are rolling — limited spots left!
@@ -334,7 +334,7 @@ export default function Home() {
               },
               {
                 question: "When does the program take place?",
-                answer: "Our Summer 2026 cohort has two groups. The first group will meet during the week of June 22nd - 26th from 6:30-9PM EST, and the second group will meet during the week of July 13th - July 17th from 6:30-9PM EST. If you would still like to participate in the bootcamp but are unable to find a time that works for you, please contact us to arrange accomodations."
+                answer: "Our Summer 2026 cohort has two sessions. Session 1 meets during the week of June 22nd–26th from 6:30–9PM EST. Session 2 meets during the week of July 13th–17th from 6:30–9PM EST — we are currently accepting applications for Session 2. If you would still like to participate in the bootcamp but are unable to find a time that works for you, please contact us to arrange accomodations."
               },
               {
                 question: "Who is eligible to apply?",
@@ -342,13 +342,13 @@ export default function Home() {
               },
               {
                 question: "What is the application process?",
-                answer: "To apply for our bootcamp cohorts, be sure to fill out the application form linked in the \"Apply\" section of the website. Applications are reviewed on a rolling basis, and we will aim to notify applicants of their decisions within a week of submitting your application. If you have any questions about the application process, please contact us directly."
+                answer: "To apply for Session 2 of our Summer 2026 bootcamp, fill out the application form linked in the \"Apply\" section of the website. Applications are reviewed on a rolling basis, and we will aim to notify applicants of their decisions within a week of submitting your application. If you have any questions about the application process, please contact us directly."
               }
             ]},
             { section: "Registration", items: [
               {
                 question: "When are applications open and when do they close?",
-                answer: "Applications are currently open for our Summer 2026 cohort! The applications will close on June 1st, 2026 at 11:59PM EST, and we will aim to notify applicants of their decisions by June 5th. Please keep updated with our website or contact us for more information or updates."
+                answer: "Applications are currently open for Summer 2026 Bootcamp Session 2 (July 13th–17th)! Applications will close on July 1st, 2026 at 11:59PM EST, and we will aim to notify applicants of their decisions by July 5th. Please keep updated with our website or contact us for more information or updates."
               },
               {
                 question: "How much does the bootcamp cost?",
